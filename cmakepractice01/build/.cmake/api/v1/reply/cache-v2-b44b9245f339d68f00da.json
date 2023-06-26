@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/t.zaman/Desktop/workspace/makeseries/build"
+			"value" : "c:/Users/t.zaman/Desktop/workspace/CMakeSeries/cmakepractice01/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -155,10 +155,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "CXX compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "C:/msys64/mingw64/bin/g++.exe"
 		},
 		{
@@ -455,7 +455,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/t.zaman/Desktop/workspace/makeseries/build/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/t.zaman/Desktop/workspace/CMakeSeries/cmakepractice01/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -527,7 +527,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/t.zaman/Desktop/workspace/makeseries"
+			"value" : "C:/Users/t.zaman/Desktop/workspace/CMakeSeries/cmakepractice01/source"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1207,7 +1207,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/t.zaman/Desktop/workspace/makeseries/build"
+			"value" : "C:/Users/t.zaman/Desktop/workspace/CMakeSeries/cmakepractice01/build"
 		},
 		{
 			"name" : "HelloApp_IS_TOP_LEVEL",
@@ -1231,7 +1231,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/t.zaman/Desktop/workspace/makeseries"
+			"value" : "C:/Users/t.zaman/Desktop/workspace/CMakeSeries/cmakepractice01/source"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

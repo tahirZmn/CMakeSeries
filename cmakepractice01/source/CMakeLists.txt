@@ -4,13 +4,16 @@ project(HelloApp
         DESCRIPTION  "The leading Hello World App"
         LANGUAGES CXX)
 
-        #alternative way for building executalbes
+        #alternative way for building executalbes -> ( DISCOURAGE by CMake designers)
         #file(GLOB_RECURSE SRC_FILES src/*.cpp)
         #add_executable(HelloBinary main.cpp ${SRC_FILES})
-add_executable(HelloAppBinary main.cpp
-               src/dog.cpp
-               src/operations.cpp)
+
+add_executable(HelloAppBinary 
+                main.cpp 
+                src/dog.cpp 
+                src/operations.cpp)
+
 target_compile_features(HelloAppBinary PRIVATE cxx_std_20)
-target_include_directories(HelloAppBinary PRIVATE ${CMAKE_CURRENT_LIST_DIR}/include)
+target_include_directories(HelloAppBinary PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
         
