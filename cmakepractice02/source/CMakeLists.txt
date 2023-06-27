@@ -22,7 +22,7 @@ target_include_directories(operations PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
 #TARGET _ 2
 
 #target_compile_features(logger PUBLIC cxx_std_20)              #setting up the C++ standard for this particuler target (NOT nedded anymore(globally declared))
-add_library(logger STATIC logger/src/log.cpp)                   #creating static library by name of logger
+add_library(logger STATIC logger/src/log.cpp)                   #creating a static library -> logger
 target_include_directories(logger PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/logger/include)  # including heading files for this library
 
 
@@ -38,6 +38,6 @@ add_executable(HelloAppBinary
 #target_compile_features(HelloAppBinary PRIVATE cxx_std_20)     #setting up the C++ standard for this particuler target (NOT nedded anymore(globally declared))
 target_include_directories(HelloAppBinary PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 target_link_libraries(HelloAppBinary PUBLIC operations logger) #including the libraries ->HelloAppBinary will 
-                                                               #PUBLICALLY depend on operations and logger libraries.
+                                                               #PUBLICALLY depend on operations and logger libraries. (DEPENDENCIES)
 
         
