@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\t.zaman\Desktop\workspace\CMakeSeries\cmakepractice02\source\logger\src\log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\t.zaman\Desktop\workspace\CMakeSeries\cmakepractice02\source\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{008DAC01-B239-3CDD-879C-577A5FE94EA3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
