@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "_deps/googletest-build",
+		"source" : "C:/Users/t.zaman/Desktop/workspace/CMakeSeries/cmakepractice01/build/_deps/googletest-src"
+	}
+}

@@ -2,6 +2,11 @@ cmake_minimum_required(VERSION 3.5)
 
 set(CXX_STANDARD_REQUIRED ON)                                     #Making sure the required standard is provided for every target (global declaration)
 set(CMAKE_CXX_STANDARD 20)
+set(GTEST_DIR path/to/googletest)
+
+
+enable_testing()
+
 
 project(HelloApp
         VERSION 0.0.1
@@ -13,6 +18,10 @@ project(HelloApp
         #add_executable(HelloBinary main.cpp ${SRC_FILES})
 
 # TARGET _ 1
+
+include_directories(${GTEST_SOURCE_DIR}/googletest)
+add_subdirectory(${GTEST_SOURCE_DIR}/Googletest)
+
 
 #target_compile_features(operations PUBLIC cxx_std_20)           #setting up the C++ standard for this particuler target(NOT nedded anymore(globally declared))
 add_library(operations STATIC src/operations.cpp)                #creating a static library from operations.cpp file. name of the library: operations
@@ -39,5 +48,9 @@ add_executable(HelloAppBinary
 target_include_directories(HelloAppBinary PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 target_link_libraries(HelloAppBinary PUBLIC operations logger) #including the libraries ->HelloAppBinary will 
                                                                #PUBLICALLY depend on operations and logger libraries. (DEPENDENCIES)
+
+
+add_executable(my_tests test/test_example.cpp)  
+target_link_libraries(my_tests PRIVATE gtest gmock)                                                                 
 
         
